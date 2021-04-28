@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+          Arrays  
+        </title>
+    </head>
+    <body>
+        <p>
+            How to declare arrays?
+            <h4 id="declare_array">
+                
+            </h4>
+        </p>
+        <hr>
+
+        <p>
+            How to fetch the first element of the array?
+            <h4 id="first_element">
+                
+            </h4>
+        </p>
+        <hr>
+
+        <p>
+            How to get the length of the array?
+            <h4 id="length_array">
+                
+            </h4>
+        </p>
+        <hr>
+
+        <p> How to loop the array array ? <h4 id="loop_the_array"> </h4> </p> <hr>
+
+    </body>
+    <script>
+        var fruits = ["strawberries" ,"banana","green grapes"];
+        console.log(fruits);
+        document.getElementById("declare_array").innerHTML = fruits;
+
+        var first_fruits = fruits[0];
+        console.log(first_fruits);
+        document.getElementById("first_element").innerHTML = first_fruits;
+
+        var length_fruits = fruits.length;
+        console.log(length_fruits);
+        document.getElementById("length_array").innerHTML = length_fruits;
+
+        var array_value="";
+        for (i = 0; i < fruits.length; i++) { console.log(fruits[i]); array_value = array_value + fruits[i] + "<br>"; } document.getElementById("loop_the_array").innerHTML = array_value;s
+    </script>
+</html>
